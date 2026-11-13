@@ -8,3 +8,52 @@ body {
   margin: auto;
   padding: 1em;
 }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: baseline;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+header label {
+  margin-left: auto;
+  text-align: right;
+}
+
+header time,
+header em {
+  display: block;
+}
+
+header em {
+  color: #666;
+}
+
+#time-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+#time-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  border-radius: 50%;
+  background: #0075ff;
+}
+
+#time-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  border-radius: 50%;
+  background: #0075ff;
+}
